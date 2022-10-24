@@ -1,0 +1,120 @@
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #fff7f8;
+    text-align: center;
+}
+
+header {
+    padding: 28px;
+    text-align: left;
+}
+
+header img {
+    height: 22px;
+}
+
+picture img {
+    width: 100%;
+    max-width: 700px;
+}
+
+main {
+    height: 280px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: var(--dark-grayish-red);
+}
+
+h1 span {
+    font-weight: 300;
+}
+
+main p {
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+span, p, input::placeholder {
+    color: var(--desaturated-red);
+}
+
+form {
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid var(--desaturated-red);
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+input:invalid {
+    border: 2px solid var(--soft-red);
+}
+
+input:focus {
+    outline: none;
+}
+
+#submitBtn {
+    display: none;
+}
+
+label:nth-child(2) {
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    right: 0;
+    bottom: 0%;
+    height: 100%;
+    width: 60px;
+    transition: all 500ms ease-in-out;
+}
+
+label:nth-child(2):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+.error {
+    color: var(--soft-red);
+    font-size: .9rem;
+    position: absolute;
+    left: 20px;
+    top: 115%;
+}
+
+#error-icon {
+    position: absolute;
+    right: 110%;
+    display: none;
+}
+
