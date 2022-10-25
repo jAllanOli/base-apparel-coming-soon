@@ -24,5 +24,7 @@ form.addEventListener("submit", (event) => {
 function showError() {
   if (email.validity.typeMismatch) {
     emailError.innerText = "Please provide a valid email";
+  } else if (email.validity.valueMissing) {
+    emailError.innerText = "You need to enter an e-mail address";
   }
 }
