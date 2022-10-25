@@ -32,8 +32,8 @@ Users should be able to:
 ![](./screenshot.png)
 ### Links
 
-- Solution URL: [click here](https://your-solution-url.com)
-- Live Site URL: [click here](https://your-live-site-url.com)
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/baseapparelcomingsoon-RyC4T72tq_)
+- Live Site URL: [click here](https://jallanoli.github.io/base-apparel-coming-soon/)
 
 ## My process
 
