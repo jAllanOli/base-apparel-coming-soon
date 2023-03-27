@@ -37,13 +37,14 @@
         Add your email below to stay up-to-date with announcements and our
         launch deals.
       </p>
-      <form action="#">
+      <form novalidate action="#">
         <label for="email">
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email Address"
+            required
           />
           <span class="error" aria-live="polite"></span>
         </label>
@@ -57,7 +58,7 @@
               d="M1 1l8.836 8.836L1 18.671"
             />
           </svg>
-          <img id="error-icon" src="./images/icon-error.svg" alt="/">
+          <img id="error-icon" src="./images/icon-error.svg" alt="/" />
         </label>
       </form>
     </main>
